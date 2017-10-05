@@ -4,7 +4,6 @@ using namespace std;
 
 const int size = 50;
 
-
 int my_string_len(char str[])
 {
 	int count = 0;
@@ -19,7 +18,23 @@ int my_string_len(char str[])
 
 void my_string_cat(char dest[], char src[], int dest_size)
 {
-	
+	int src_len = my_string_len(src);
+	int dest_len = my_string_len(dest);
+
+	if (src_len + dest_len < dest_size)
+	{
+		for (int i = dest_len, j = 0; j < src_len; i++, j++)
+		{
+			dest[i] = src[j];
+		}
+
+		cout << "Concatenated string:\n" << dest << endl;
+	}
+
+	else
+	{
+		cout << "Not enough space left in destination string to concatenate with source string" << endl; 
+	}
 }
 
 int main()
