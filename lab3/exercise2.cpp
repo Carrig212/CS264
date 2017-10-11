@@ -1,14 +1,14 @@
 #include <iostream>
-#include <cstring>
 
 using namespace std;
 
 int main() {
 
-	double *ar = new double[10];
-	int n, i = 0;
+	int max = 10, i = 0;
+	double* ar = new double[max];
+	double n;
 
-	cout << "Input a sequence of doubles. To quit, input -1" << endl;
+	cout << "Input some doubles to print backwards. To exit, type -1" << endl;
 
 	while (true) {
 		cin >> n;
@@ -17,25 +17,30 @@ int main() {
 			break;
 		}
 
-		int size = sizeof(ar)/sizeof(ar[0]);
-
-		if (i < size) {
+		if (i < max) {
 			ar[i] = n;
 			i++;
 		} else {
-			double temp[size + 10];
-			memcpy(temp, ar, size);
+			max += 10;
+			double* temp = new double[max];
+
+			for (int j = 0; j < i; j++) {
+				temp[j] = ar[j];
+			}
+
+			delete [] ar;
 			ar = temp;
+
+			ar[i] = n;
+			i++;
 		}
 	}
 
-	if (i != 0) {
-		for (int j = sizeof(ar)/sizeof(ar[0]) - 1; j >= 0; j--) {
-			cout << ar[j] << " ";
-		}
-
-		cout << endl;
+	for (int j = i - 1; j >= 0; j--) {
+		cout << ar[j] << " ";
 	}
+
+	cout << endl;
 
 	return 0;
 }
