@@ -44,3 +44,14 @@ void printCustomers(Customer *head) {
         current = current -> next;
     }
 }
+
+
+//Lab 5 version
+void printCustomers(Customer &head) {
+    Customer* current = &head;
+
+    while (current != NULL) {
+        cout << current -> name << endl;
+        current = current -> next;
+    }
+}
