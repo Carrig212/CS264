@@ -47,7 +47,6 @@ void printCustomers(Customer *head) {
     }
 }
 
-
 //Lab 5 version
 void printCustomers(Customer &head) {
     Customer* current = &head;
