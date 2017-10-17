@@ -1,3 +1,5 @@
+// William Anderson 15494372
+
 #include <iostream>
 
 using namespace std;
@@ -12,7 +14,7 @@ int main() {
 	double ar[n];
 
 	cout << "Input " << n << " doubles:" << endl;
-	
+
 	for (int i = 0; i < n; i++) {
 		cin >> ar[i];
 	}
