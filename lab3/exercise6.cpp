@@ -7,27 +7,27 @@ using namespace std;
 
 int main() {
 
-     int n;
-     string name;
+    int n;
+    string name;
 
-     cout << "Input the number of customers would you like to create: ";
-     cin >> n;
+    cout << "Input the number of customers would you like to create: ";
+    cin >> n;
 
-     cout << "Enter the name of the first customer: ";
-     cin >> name;
-     Customer* head = createList(name);
+    cout << "Enter the name of the first customer: ";
+    cin >> name;
+    Customer* head = createList(name);
 
-     for (int x = 1; x < n; x++) {
-         cout << "Enter the name of customer " << x+1 << ": ";
-         cin >> name;
+    for (int x = 1; x < n; x++) {
+        cout << "Enter the name of customer " << x+1 << ": ";
+        cin >> name;
 
-         insertName(head, name);
-     }
+        insertName(head, name);
+    }
 
-     n = listLength(head);
-     cout << endl << "List length: " << n << endl << "Customer names:" << endl;
+    n = listLength(head);
+    cout << endl << "List length: " << n << endl << "Customer names:" << endl;
 
-     printCustomers(head);
+    printCustomers(head);
 
     return 0;
 }
