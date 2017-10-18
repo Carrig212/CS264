@@ -9,15 +9,23 @@ int main() {
 
     int n;
     string name;
-	
-	cout << "Enter as many customer names as you like: (Input \"end\" to exit)" << endl;
+
+    cout << "Enter as many customer names as you like: (Input \"end\" to exit)" << endl;
+
+    cin >> name;
+
+    if (name == "end") {
+        return 0;
+    }
+
+    Customer* head = createList(name);
 
     while (true) {
         cin >> name;
-		
-		if (name == "end") {
-			break;
-		}
+
+        if (name == "end") {
+            break;
+        }
 
         insertName(head, name);
     }
