@@ -9,17 +9,15 @@ int main() {
 
     int n;
     string name;
+	
+	cout << "Enter as many customer names as you like: (Input \"end\" to exit)" << endl;
 
-    cout << "Input the number of customers would you like to create: ";
-    cin >> n;
-
-    cout << "Enter the name of the first customer: ";
-    cin >> name;
-    Customer* head = createList(name);
-
-    for (int x = 1; x < n; x++) {
-        cout << "Enter the name of customer " << x+1 << ": ";
+    while (true) {
         cin >> name;
+		
+		if (name == "end") {
+			break;
+		}
 
         insertName(head, name);
     }
