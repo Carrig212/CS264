@@ -1,3 +1,5 @@
+// William Anderson 15494372
+
 #include <iostream>
 #include "MyComplex.h"
 
