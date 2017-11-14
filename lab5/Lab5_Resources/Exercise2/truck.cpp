@@ -5,6 +5,10 @@
 #include "truck.h"
 
 /* Write definition for class Truck's constructor */
+Truck::Truck(double f) : Vehicle(2, 16, "black", f, 8) {
+  cargo = false;
+  setClassName("Truck");
+}
 
 // function hasCargo definition
 bool Truck::hasCargo() const
