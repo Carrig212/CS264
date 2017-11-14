@@ -39,14 +39,15 @@ void Racecar::useParachute()
 void Racecar::print() const
 {
    /* Write statement that calls base-class member function print here */
+   Car::print();
    cout << getName() << " also has " << gearbox
         << " gears and is sponsored by " << sponsor << ". ";
 
    if ( parachuteDeployed )
-      cout << /* Write statement that accesess base-class version of name here */
+      cout << Car::name /* Write statement that accesess base-class version of name here */
            << " has used its parachute." << endl;
    else
-      cout << /* Write statement that accesess base-class version of name here */ ;
+      cout << Car::name /* Write statement that accesess base-class version of name here */ ;
            << " has not used its parachute." << endl;
 
 } // end function print
