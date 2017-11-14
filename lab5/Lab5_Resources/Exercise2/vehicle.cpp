@@ -11,12 +11,10 @@ using std::endl;
 
 // constructor
 Vehicle::Vehicle( const int doors, const int cylinders, string color, double initialFuel, const int transmission )
+: numberOfDoors(doors), numberOfCylinders(cylinders), transmissionType(transmission) {
    /* Write the body for Vehicle's constructor */
-   numberOfDoors = doors;
-   numberOfCylinders = cylinders;
    vehicleColor = color;
    fuelLevel = initialFuel;
-   transmissionType = transmission;
    className = "Vehicle";
 
 } // end class Vehicle constructor
@@ -36,8 +34,8 @@ ostream &operator<<( ostream &out, const Vehicle &v )
 } // end function operator<<
 
 /* Write definition for setColor */
-void Vehicle::setColor(string color) {
-  this -> color = color;
+void Vehicle::setColor(string c) {
+  vehicleColor = c;
 }
 
 // function setFuelLevel definition

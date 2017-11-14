@@ -18,9 +18,11 @@ int main()
    Truck mack( 7.54 );
 
    /* Write code to indicate that mack is carrying cargo */
+   mack.setCargo(true);
 
    /* Write code to print all objects in the Vehicle
       hierarchy */
+      cout << car << cab << mack;
 
    return 0;
 
