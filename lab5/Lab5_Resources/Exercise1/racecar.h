@@ -10,6 +10,7 @@
 // class Racecar definition
 /* Write class header for Racecar, which inherits publicly
    from Car */
+class Racecar: public Car {
 
 public:
    Racecar( string, string, string );

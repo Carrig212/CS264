@@ -10,10 +10,11 @@ using std::endl;
 #include "racecar.h"
 
 // constructor
-Racecar::Racecar( string n, string c, string s )
+Racecar::Racecar( string n, string c, string s ): Car(n, c)
    /* Write code to call base-class constructor */
 {
    /* Write code to copy s into private data member sponsor */
+   sponsor = s;
 
    gearbox = 6;
    parachuteDeployed = false;
