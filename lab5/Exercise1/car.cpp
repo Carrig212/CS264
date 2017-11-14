@@ -1,7 +1,4 @@
 // William ANDERSON 15494372
-
-// Chapter 9 of C++ How to Program
-// car.cpp
 #include <iostream>
 
 using std::cout;
@@ -9,78 +6,59 @@ using std::endl;
 
 #include "car.h"
 
-/* Write the constructor for Car, which takes the Car�s name and
-   color and assigns them to private data members name and
-   color; initialize maxSpeed to 95 and engineValves to 4 */
+/* Constructor */
 Car::Car(string name, string color) {
-  this -> name = name;
-  this -> color = color;
-  maxSpeed = 95;
-  engineValves = 4;
+    this -> name = name;
+    this -> color = color;
+    maxSpeed = 95;
+    engineValves = 4;
 }
-// function setMaxSpeed definition
-void Car::setMaxSpeed( int s )
-{
-   maxSpeed = ( ( s >= 0 && s < 250 ) ? s : 40 );
 
-} // end function setMaxSpeed
+/* Getters */
+int Car::getMaxSpeed() const {
+    return maxSpeed;
+}
 
-// function setEngineValves definition
-void Car::setEngineValves( int v )
-{
-   engineValves = ( ( v >= 0 && v < 50 ) ? v : 4 );
+int Car::getEngineValves() const {
+    return engineValves;
+}
 
-} // end function setEngineValves
+string Car::getName() const {
+    return name;
+}
 
-// return maxSpeed
-int Car::getMaxSpeed() const
-{
-   return maxSpeed;
+string Car::getColor() const {
+    return color;
+}
 
-} // end function getMaxSpeed
+/* Setters */
+void Car::setMaxSpeed(int s) {
+    maxSpeed = ((s >= 0 && s < 250) ? s : 40);
+}
 
-// return engineValves
-int Car::getEngineValves() const
-{
-   return engineValves;
+void Car::setEngineValves(int v) {
+    engineValves = ((v >= 0 && v < 50) ? v : 4);
+}
 
-} // end function getEngineValves
-
-// return name
-string Car::getName() const
-{
-   return name;
-
-} // end function getName
-
-// return color
-string Car::getColor() const
-{
-   return color;
-
-} // end function getColor
-
-// function print definition
-void Car::print() const
-{
-   cout << "Car: " << name << " is " << color << " and has a "
-        << engineValves << "-valve engine. MAX SPEED = "
-        << maxSpeed << " mph. " << endl;
-
-} // end function print
+/* Printer */
+void Car::print() const {
+    cout << "Car: " << name << " is " << color << " and has a "
+         << engineValves << "-valve engine. MAX SPEED = "
+         << maxSpeed << " mph. " << endl;
+}
 
 
 /**************************************************************************
- * (C) Copyright 1992-2003 by Deitel & Associates, Inc. and Prentice      *
- * Hall. All Rights Reserved.                                             *
- *                                                                        *
- * DISCLAIMER: The authors and publisher of this book have used their     *
- * best efforts in preparing the book. These efforts include the          *
- * development, research, and testing of the theories and programs        *
- * to determine their effectiveness. The authors and publisher make       *
- * no warranty of any kind, expressed or implied, with regard to these    *
- * programs or to the documentation contained in these books. The authors *
- * and publisher shall not be liable in any event for incidental or       *
- * consequential damages in connection with, or arising out of, the       *
- * furnishing, performance, or use of these programs.                     *
- *************************************************************************/
+* (C) Copyright 1992-2003 by Deitel & Associates, Inc. and Prentice      *
+* Hall. All Rights Reserved.                                             *
+*                                                                        *
+* DISCLAIMER: The authors and publisher of this book have used their     *
+* best efforts in preparing the book. These efforts include the          *
+* development, research, and testing of the theories and programs        *
+* to determine their effectiveness. The authors and publisher make       *
+* no warranty of any kind, expressed or implied, with regard to these    *
+* programs or to the documentation contained in these books. The authors *
+* and publisher shall not be liable in any event for incidental or       *
+* consequential damages in connection with, or arising out of, the       *
+* furnishing, performance, or use of these programs.                     *
+*************************************************************************/

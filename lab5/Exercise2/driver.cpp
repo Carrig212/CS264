@@ -1,7 +1,4 @@
 // William ANDERSON 15494372
-
-// Chapter 9 of C++ How to Program
-// driver for inheritance hierarchy
 #include <iostream>
 
 using std::cout;
@@ -11,22 +8,17 @@ using std::endl;
 #include "taxi.h"
 #include "truck.h"
 
-int main()
-{
-   Vehicle car( 2, 6, "blue", 14.6, 3 );
-   Taxi cab( 3.3 );
-   Truck mack( 7.54 );
+int main() {
+    Vehicle car(2, 6, "blue", 14.6, 3);
+    Taxi cab(3.3);
+    Truck mack(7.54);
 
-   /* Write code to indicate that mack is carrying cargo */
-   mack.setCargo(true);
+    mack.setCargo(true);
 
-   /* Write code to print all objects in the Vehicle
-      hierarchy */
-      cout << car << cab << mack;
+    cout << car << cab << mack;
 
-   return 0;
-
-} // end main
+    return 0;
+}
 
 /**************************************************************************
  * (C) Copyright 1992-2003 by Deitel & Associates, Inc. and Prentice      *
