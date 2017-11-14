@@ -16,6 +16,7 @@ int main()
 
    cout << "chevy: \n";
    /* Write code to print Car object */
+   chevy.print();
 
    Racecar f1( "Ferrari", "red", "Bug2Bug" );
 
