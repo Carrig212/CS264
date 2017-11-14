@@ -12,7 +12,12 @@ using std::endl;
 /* Write the constructor for Car, which takes the Car�s name and
    color and assigns them to private data members name and
    color; initialize maxSpeed to 95 and engineValves to 4 */
-
+Car::Car(string name, string color) {
+  this -> name = name;
+  this -> color = color;
+  maxSpeed = 95;
+  engineValves = 4;
+}
 // function setMaxSpeed definition
 void Car::setMaxSpeed( int s )
 {
