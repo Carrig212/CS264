@@ -1,3 +1,5 @@
+// William ANDERSON 15494372
+
 // Chapter 9 of C++ How to Program
 // car.cpp
 #include <iostream>
@@ -7,14 +9,14 @@ using std::endl;
 
 #include "car.h"
 
-/* Write the constructor for Car, which takes the Car’s name and 
-   color and assigns them to private data members name and 
+/* Write the constructor for Car, which takes the Carï¿½s name and
+   color and assigns them to private data members name and
    color; initialize maxSpeed to 95 and engineValves to 4 */
 
 // function setMaxSpeed definition
-void Car::setMaxSpeed( int s ) 
-{ 
-   maxSpeed = ( ( s >= 0 && s < 250 ) ? s : 40 ); 
+void Car::setMaxSpeed( int s )
+{
+   maxSpeed = ( ( s >= 0 && s < 250 ) ? s : 40 );
 
 } // end function setMaxSpeed
 
@@ -56,8 +58,8 @@ string Car::getColor() const
 // function print definition
 void Car::print() const
 {
-   cout << "Car: " << name << " is " << color << " and has a " 
-        << engineValves << "-valve engine. MAX SPEED = " 
+   cout << "Car: " << name << " is " << color << " and has a "
+        << engineValves << "-valve engine. MAX SPEED = "
         << maxSpeed << " mph. " << endl;
 
 } // end function print

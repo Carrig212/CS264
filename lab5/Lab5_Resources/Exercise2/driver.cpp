@@ -1,3 +1,5 @@
+// William ANDERSON 15494372
+
 // Chapter 9 of C++ How to Program
 // driver for inheritance hierarchy
 #include <iostream>
@@ -38,4 +40,3 @@ int main()
  * consequential damages in connection with, or arising out of, the       *
  * furnishing, performance, or use of these programs.                     *
  *************************************************************************/
-

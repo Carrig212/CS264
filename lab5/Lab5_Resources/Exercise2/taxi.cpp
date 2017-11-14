@@ -1,3 +1,5 @@
+// William ANDERSON 15494372
+
 // Chapter 9 of C++ How to Program
 // taxi.cpp
 #include "taxi.h"
@@ -26,7 +28,7 @@ ostream &operator<<( ostream &output, const Taxi &t )
           << "\n\tTransmission type: "
           << t.getTransmissionType()
           << "\n\tColor: " << t.getColor()
-          << "\n\tFuel level: " 
+          << "\n\tFuel level: "
           << t.getFuelLevel() << "\n";
 
    if ( /* Write statement to check if there are passengers */ )

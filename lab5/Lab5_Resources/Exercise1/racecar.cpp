@@ -1,3 +1,5 @@
+// William ANDERSON 15494372
+
 // Chapter 9 of C++ How to Program
 // racecar.cpp
 #include <iostream>
@@ -26,7 +28,7 @@ void Racecar::setGearbox( int gears )
 } // end function setGearbox
 
 // function useParachute definition
-void Racecar::useParachute() 
+void Racecar::useParachute()
 }
    parachuteDeployed = true;
 
@@ -36,11 +38,11 @@ void Racecar::useParachute()
 void Racecar::print() const
 {
    /* Write statement that calls base-class member function print here */
-   cout << getName() << " also has " << gearbox 
+   cout << getName() << " also has " << gearbox
         << " gears and is sponsored by " << sponsor << ". ";
 
    if ( parachuteDeployed )
-      cout << /* Write statement that accesess base-class version of name here */ 
+      cout << /* Write statement that accesess base-class version of name here */
            << " has used its parachute." << endl;
    else
       cout << /* Write statement that accesess base-class version of name here */ ;

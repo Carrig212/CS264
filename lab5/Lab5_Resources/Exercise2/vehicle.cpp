@@ -1,3 +1,5 @@
+// William ANDERSON 15494372
+
 // Chapter 9 of C++ How to Program
 // vehicle.cpp
 #include <iostream>
@@ -8,11 +10,11 @@ using std::endl;
 #include "vehicle.h"
 
 // constructor
-Vehicle::Vehicle( const int doors, const int cylinders, 
-   string color, double initialFuel, 
-   const int transmission ) 
+Vehicle::Vehicle( const int doors, const int cylinders,
+   string color, double initialFuel,
+   const int transmission )
    /* Write the body for Vehicle's constructor */
- 
+
 } // end class Vehicle constructor
 
 // function operator<< definition
@@ -35,7 +37,7 @@ ostream &operator<<( ostream &out, const Vehicle &v )
 void Vehicle::setFuelLevel( double amount )
 {
    // assume 20 gallons is full tank
-   if ( amount > 0.0 && amount <= 20.0 ) 
+   if ( amount > 0.0 && amount <= 20.0 )
       fuelLevel = amount;
 
    else
@@ -45,11 +47,11 @@ void Vehicle::setFuelLevel( double amount )
 
 // return color
 string Vehicle::getColor() const
-{   
+{
    return vehicleColor;
 
 } // end function getColor
- 
+
 // return fuelLevel
 double Vehicle::getFuelLevel() const
 {
@@ -63,7 +65,7 @@ int Vehicle::getTransmissionType() const
    return transmissionType;
 
 } // end function getTransmissionType
-   
+
 // return numberOfDoors
 int Vehicle::getNumberOfDoors() const
 {
@@ -74,7 +76,7 @@ int Vehicle::getNumberOfDoors() const
 // return numberOfCylinders
 int Vehicle::getNumberOfCylinders() const
 {
-   return numberOfCylinders;   
+   return numberOfCylinders;
 
 } // end function getNumberOfCylinders
 
@@ -86,7 +88,7 @@ void Vehicle::setClassName( string newName )
 } // end function setClassName
 
 // return className
-string Vehicle::getClassName() const  
+string Vehicle::getClassName() const
 {
    return className;
 
@@ -108,4 +110,3 @@ string Vehicle::getClassName() const
  * consequential damages in connection with, or arising out of, the       *
  * furnishing, performance, or use of these programs.                     *
  *************************************************************************/
-

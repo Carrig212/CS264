@@ -1,3 +1,5 @@
+// William ANDERSON 15494372
+
 // Chapter 9 of C++ How to Program
 // racecar.h
 #ifndef RACECAR_H
@@ -7,7 +9,7 @@
 
 // class Racecar definition
 /* Write class header for Racecar, which inherits publicly
-   from Car */ 
+   from Car */
 
 public:
    Racecar( string, string, string );
@@ -18,8 +20,8 @@ public:
 
 private:
    int gearbox; // number of gears in car (e.g., 5-speed)
-   string sponsor;  
-   bool parachuteDeployed; 
+   string sponsor;
+   bool parachuteDeployed;
 
 }; // end class Racecar
 

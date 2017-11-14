@@ -1,3 +1,5 @@
+// William ANDERSON 15494372
+
 // Chapter 9 of C++ How to Program
 // vehicle.h
 #ifndef VEHICLE_H
@@ -16,8 +18,8 @@ class Vehicle {
    friend ostream& operator<<( ostream &, const Vehicle & );
 
 public:
-   Vehicle( const int, const int, string, double, const int ); 
-   
+   Vehicle( const int, const int, string, double, const int );
+
    void setColor( string );
    string getColor() const;
 
@@ -29,7 +31,7 @@ public:
 
    int getTransmissionType() const;
    int getNumberOfDoors() const;
-   int getNumberOfCylinders() const; 
+   int getNumberOfCylinders() const;
 
 private:
    const int numberOfDoors;
@@ -58,4 +60,3 @@ private:
  * consequential damages in connection with, or arising out of, the       *
  * furnishing, performance, or use of these programs.                     *
  *************************************************************************/
-

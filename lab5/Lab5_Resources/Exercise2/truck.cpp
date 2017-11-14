@@ -1,3 +1,5 @@
+// William ANDERSON 15494372
+
 // Chapter 9 of C++ How to Program
 // truck.cpp
 #include "truck.h"
@@ -12,7 +14,7 @@ bool Truck::hasCargo() const
 } // end function hasCargo
 
 // function setCargo definition
-void Truck::setCargo( bool c ) 
+void Truck::setCargo( bool c )
 {
    cargo = c;
 
@@ -22,14 +24,14 @@ void Truck::setCargo( bool c )
 ostream &operator<<( ostream &output, const Truck &t )
 {
    output << t.getClassName() << "\n"
-          << "\tNumber of doors: " 
+          << "\tNumber of doors: "
           << t.getNumberOfDoors()
-          << "\n\tNumber of cylinders: " 
+          << "\n\tNumber of cylinders: "
           << t.getNumberOfCylinders()
-          << "\n\tTransmission type: " 
+          << "\n\tTransmission type: "
           << t.getTransmissionType()
           << "\n\tColor: " << t.getColor()
-          << "\n\tFuel level: " 
+          << "\n\tFuel level: "
           << t.getFuelLevel() << "\n";
 
    if ( t.cargo )
@@ -56,4 +58,3 @@ ostream &operator<<( ostream &output, const Truck &t )
  * consequential damages in connection with, or arising out of, the       *
  * furnishing, performance, or use of these programs.                     *
  *************************************************************************/
-
