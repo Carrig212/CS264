@@ -21,7 +21,7 @@ public:
    int getMaxSpeed() const;
 
    void setEngineValves( int );
-   int getEngineValves() const
+   int getEngineValves() const;
 
    string getColor() const;
    string getName() const;

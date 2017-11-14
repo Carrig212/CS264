@@ -30,7 +30,7 @@ void Racecar::setGearbox( int gears )
 
 // function useParachute definition
 void Racecar::useParachute()
-}
+{
    parachuteDeployed = true;
 
 } // end function useParachute
@@ -44,10 +44,10 @@ void Racecar::print() const
         << " gears and is sponsored by " << sponsor << ". ";
 
    if ( parachuteDeployed )
-      cout << Car::name /* Write statement that accesess base-class version of name here */
+      cout << Car::getName() /* Write statement that accesess base-class version of name here */
            << " has used its parachute." << endl;
    else
-      cout << Car::name /* Write statement that accesess base-class version of name here */ ;
+      cout << Car::getName() /* Write statement that accesess base-class version of name here */ 
            << " has not used its parachute." << endl;
 
 } // end function print
