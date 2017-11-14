@@ -17,6 +17,7 @@ Vehicle::Vehicle( const int doors, const int cylinders, string color, double ini
    vehicleColor = color;
    fuelLevel = initialFuel;
    transmissionType = transmission;
+   className = "Vehicle";
 
 } // end class Vehicle constructor
 

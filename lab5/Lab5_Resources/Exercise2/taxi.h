@@ -16,7 +16,9 @@ class Taxi : public Vehicle {
 public:
    Taxi( double );
    /* Write prototype for hasCustomers */
+   bool hasCustomers(void) const;
    /* Write prototype for setCustomers */
+   void setCustomers(bool);
 
 private:
    bool customers;
