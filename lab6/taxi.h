@@ -7,23 +7,16 @@
 
 #include "vehicle.h"
 
-
 class Taxi : public Vehicle {
+    public:
+        Taxi( double );
+        bool hasCustomers() const;
+        void setCustomers( bool );
+        virtual void print() const;
+        virtual string getClassName() const;
 
-public:
-   Taxi( double );
-
-   bool hasCustomers() const;
-   void setCustomers( bool );
-
-
-
-   virtual void print() const;
-   virtual string getClassName() const;
-
-private:
-   bool customers;
-
+    private:
+        bool customers;
 };
 
 #endif
