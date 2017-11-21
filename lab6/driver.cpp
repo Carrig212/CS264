@@ -14,15 +14,15 @@ using std::vector;
 #include "truck.h"
 
 int main() {
-    Taxi cab(3.3);
-    Truck mack(7.54);
+    Taxi *cab = new Taxi(3.3);
+    Truck *mack = new Truck(7.54);
 
-    mack.setCargo(true);
+    mack -> setCargo(true);
 
     std::vector<Vehicle*> parkingLot(2);
 
-    parkingLot[0] = &cab;
-    parkingLot[1] = &mack;
+    parkingLot[0] = cab;
+    parkingLot[1] = mack;
 
     cout << "\nThe vehicles cannot get out of their parking spaces because of "
          << "traffic,\nso they respond: \n";
@@ -34,6 +34,9 @@ int main() {
         parkingLot[i] -> print();
         cout << endl;
     }
+
+    delete cab;
+    delete mack;
 
     return 0;
 }
