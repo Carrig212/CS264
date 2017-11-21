@@ -20,7 +20,9 @@ class Vehicle {
         int getNumberOfDoors() const;
         int getNumberOfCylinders() const;
         virtual string getClassName() const;
-        
+        virtual void horn() const = 0;
+        virtual void print() const;
+
     private:
         const int numberOfDoors;
         const int numberOfCylinders;

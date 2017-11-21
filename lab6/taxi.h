@@ -13,6 +13,7 @@ class Taxi : public Vehicle {
         bool hasCustomers() const;
         void setCustomers(bool);
         virtual void print() const;
+        virtual void horn() const;
         virtual string getClassName() const;
 
     private:
