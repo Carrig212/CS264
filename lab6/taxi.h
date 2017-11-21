@@ -9,9 +9,9 @@
 
 class Taxi : public Vehicle {
     public:
-        Taxi( double );
+        Taxi(double);
         bool hasCustomers() const;
-        void setCustomers( bool );
+        void setCustomers(bool);
         virtual void print() const;
         virtual string getClassName() const;
 

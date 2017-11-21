@@ -6,7 +6,7 @@ using std::cout;
 
 #include "truck.h"
 
-Truck::Truck( double fuel ) : Vehicle( 2, 16, "black", fuel, 8 ) {
+Truck::Truck(double fuel) : Vehicle(2, 16, "black", fuel, 8) {
     cargo = false;
 }
 
@@ -15,14 +15,14 @@ bool Truck::hasCargo() const {
 }
 
 
-void Truck::setCargo( bool cargoValue ) {
+void Truck::setCargo(bool cargoValue) {
     cargo = cargoValue;
 }
 
 void Truck::print() const {
     Vehicle::print();
 
-    if ( cargo )
+    if (cargo)
         cout << "\tThe truck is currently carrying cargo.\n";
     else
         cout << "\tThe truck is currently not carrying cargo.\n";

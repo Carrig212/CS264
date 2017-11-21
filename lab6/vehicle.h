@@ -11,10 +11,10 @@ using std::string;
 
 class Vehicle {
     public:
-        Vehicle( const int doors, const int cylinders, string color, double initialFuel, const int transmission );
-        void setColor( string color );
+        Vehicle(const int doors, const int cylinders, string color, double initialFuel, const int transmission);
+        void setColor(string color);
         string getColor() const;
-        void setFuelLevel( double amount );
+        void setFuelLevel(double amount);
         double getFuelLevel() const;
         int getTransmissionType() const;
         int getNumberOfDoors() const;

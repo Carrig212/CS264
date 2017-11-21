@@ -9,9 +9,9 @@
 
 class Truck : public Vehicle {
     public:
-        Truck( double );
+        Truck(double);
         bool hasCargo() const;
-        void setCargo( bool );
+        void setCargo(bool);
         virtual void horn() const;
         virtual void print() const;
         virtual string getClassName() const;

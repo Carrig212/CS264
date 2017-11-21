@@ -9,7 +9,7 @@ class ParkingLot {
 		ParkingLot();
 		virtual ~ParkingLot();
 
-		virtual void addVehicle( Vehicle * );
+		virtual void addVehicle(Vehicle *);
 		virtual	void printVehicles() const;
 		virtual	int getVehicleCount() const;
 

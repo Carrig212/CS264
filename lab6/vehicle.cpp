@@ -8,10 +8,10 @@ using std::ostream;
 
 #include "vehicle.h"
 
-Vehicle::Vehicle( const int doors, const int cylinders, string color, double initialFuel, const int transmission )
-                : numberOfDoors( doors ), numberOfCylinders( cylinders ), transmissionType( transmission ) {
-    setFuelLevel( initialFuel );
-    setColor( color );
+Vehicle::Vehicle(const int doors, const int cylinders, string color, double initialFuel, const int transmission)
+                : numberOfDoors(doors), numberOfCylinders(cylinders), transmissionType(transmission) {
+    setFuelLevel(initialFuel);
+    setColor(color);
 }
 
 void Vehicle::print() const {
@@ -22,12 +22,12 @@ void Vehicle::print() const {
          << "\n\tFuel level: " << getFuelLevel() << endl;
 }
 
-void Vehicle::setColor( string color ) {
+void Vehicle::setColor(string color) {
     vehicleColor = color;
 }
 
-void Vehicle::setFuelLevel( double amount ) {
-    if ( amount > 0.0 && amount <= 20.0 )
+void Vehicle::setFuelLevel(double amount) {
+    if (amount > 0.0 && amount <= 20.0)
         fuelLevel = amount;
     else
         fuelLevel = 5.0;

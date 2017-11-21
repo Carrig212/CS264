@@ -6,11 +6,11 @@ using std::cout;
 
 #include "taxi.h"
 
-Taxi::Taxi( double fuel ) : Vehicle( 4, 6, "yellow", fuel, 5 ) {
+Taxi::Taxi(double fuel) : Vehicle(4, 6, "yellow", fuel, 5) {
     customers = false;
 }
 
-void Taxi::setCustomers( bool c ) {
+void Taxi::setCustomers(bool c) {
     customers = c;
 }
 
@@ -21,7 +21,7 @@ bool Taxi::hasCustomers() const {
 void Taxi::print() const {
     Vehicle::print();
 
-    if ( customers )
+    if (customers)
         cout << "\tThe taxi currently has passengers.\n";
     else
         cout << "\tThe taxi currently has no passengers.\n";
