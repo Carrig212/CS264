@@ -1,3 +1,5 @@
+// William ANDERSON 15494372
+
 #include <vector>
 
 #include "vehicle.h"
@@ -16,4 +18,4 @@ private:
 	std::vector< Vehicle * > vehicles;
 	int cout
 
-}; 
+};

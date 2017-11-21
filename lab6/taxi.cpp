@@ -1,4 +1,4 @@
-
+// William ANDERSON 15494372
 
 #include <iostream>
 
@@ -12,21 +12,21 @@ Taxi::Taxi( double fuel )
 {
    customers = false;
 
-} 
+}
 
 
-void Taxi::setCustomers( bool c ) 
+void Taxi::setCustomers( bool c )
 {
    customers = c;
 
-} 
+}
 
 
-bool Taxi::hasCustomers() const 
+bool Taxi::hasCustomers() const
 {
    return customers;
 
-} 
+}
 
 
 void Taxi::print() const
@@ -42,22 +42,18 @@ void Taxi::print() const
 
    cout << "class name: " << getClassName() << "\n";
 
-} 
+}
 
 
 void Taxi::horn() const
 {
    cout << "beep beep";
 
-} 
+}
 
 
 string Taxi::getClassName() const
 {
    return "Taxi";
 
-} 
-
-
-
-
+}

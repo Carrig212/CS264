@@ -1,4 +1,4 @@
-
+// William ANDERSON 15494372
 
 #include <iostream>
 
@@ -11,28 +11,28 @@ Truck::Truck( double fuel )
    : Vehicle( 2, 16, "black", fuel, 8 )
 {
    cargo = false;
-  
-} 
+
+}
 
 
-bool Truck::hasCargo() const 
+bool Truck::hasCargo() const
 {
    return cargo;
 
-} 
+}
 
 
-void Truck::setCargo( bool cargoValue ) 
+void Truck::setCargo( bool cargoValue )
 {
    cargo = cargoValue;
 
-} 
+}
 
 
 void Truck::print() const
 {
    Vehicle::print();
-   
+
    if ( cargo )
       cout << "\tThe truck is currently carrying cargo.\n";
 
@@ -41,22 +41,18 @@ void Truck::print() const
 
    cout << "class name: " << getClassName() << "\n";
 
-} 
+}
 
 
 void Truck::horn() const
 {
-   cout << "HOOOONK!"; 
+   cout << "HOOOONK!";
 
-} 
+}
 
 
 string Truck::getClassName() const
 {
    return "Truck";
 
-} 
-
-
-
-
+}

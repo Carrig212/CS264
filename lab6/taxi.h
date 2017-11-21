@@ -1,4 +1,4 @@
-
+// William ANDERSON 15494372
 
 #ifndef TAXI_H
 #define TAXI_H
@@ -16,7 +16,7 @@ public:
    bool hasCustomers() const;
    void setCustomers( bool );
 
-   
+
 
    virtual void print() const;
    virtual string getClassName() const;
@@ -24,11 +24,6 @@ public:
 private:
    bool customers;
 
-}; 
+};
 
-#endif 
-
-
-
-
-
+#endif

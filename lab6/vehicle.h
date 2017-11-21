@@ -1,4 +1,4 @@
-
+// William ANDERSON 15494372
 
 #ifndef VEHICLE_H
 #define VEHICLE_H
@@ -13,11 +13,11 @@ using std::string;
 class Vehicle {
 
 public:
-   Vehicle( const int doors, const int cylinders, 
-      string color, double initialFuel, 
+   Vehicle( const int doors, const int cylinders,
+      string color, double initialFuel,
 		      const int transmission );
 
-   void setColor( string color ); 
+   void setColor( string color );
    string getColor() const;
 
    void setFuelLevel( double amount );
@@ -25,12 +25,12 @@ public:
 
    int getTransmissionType() const;
    int getNumberOfDoors() const;
-   int getNumberOfCylinders() const; 
+   int getNumberOfCylinders() const;
 
    virtual string getClassName() const;
 
-    
-    
+
+
 
 private:
    const int numberOfDoors;
@@ -39,10 +39,6 @@ private:
    double fuelLevel;
    const int transmissionType;
 
-}; 
+};
 
-#endif 
-
-
-
-
+#endif

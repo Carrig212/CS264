@@ -1,4 +1,4 @@
-
+// William ANDERSON 15494372
 
 #include <iostream>
 
@@ -18,9 +18,9 @@ int main()
    Taxi cab( 3.3 );
    Truck mack( 7.54 );
 
-   
 
-   
+
+
 
    parkingLot[ 0 ] = &cab;
    parkingLot[ 1 ] = &mack;
@@ -30,20 +30,10 @@ int main()
 
    for ( int i = 0; i < parkingLot.size(); i++ ) {
 
-      
+
 
       cout << endl;
-
-      
-
       cout << endl;
-
-   } 
-
+   }
    return 0;
-
-} 
-
-
-
-
+}

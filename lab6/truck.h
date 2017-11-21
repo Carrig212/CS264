@@ -1,4 +1,4 @@
-
+// William ANDERSON 15494372
 
 #ifndef TRUCK_H
 #define TRUCK_H
@@ -23,10 +23,6 @@ public:
 private:
    bool cargo;
 
-}; 
+};
 
-#endif 
-
-
-
-
+#endif
