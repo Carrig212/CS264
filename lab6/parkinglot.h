@@ -1,4 +1,5 @@
 // William ANDERSON 15494372
+#pragma once
 
 #include <vector>
 

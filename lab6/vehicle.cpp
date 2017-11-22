@@ -15,7 +15,7 @@ Vehicle::Vehicle(const int doors, const int cylinders, string color, double init
 }
 
 void Vehicle::print() const {
-    cout << "\tNumber of doors: " << getNumberOfDoors()
+    cout << "\n\tNumber of doors: " << getNumberOfDoors()
          << "\n\tNumber of cylinders: " << getNumberOfCylinders()
          << "\n\tTransmission type: " << getTransmissionType()
          << "\n\tColor: " << getColor()

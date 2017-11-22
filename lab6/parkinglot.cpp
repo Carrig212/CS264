@@ -6,7 +6,6 @@
 #include "truck.h"
 
 #include <vector>
-#include <iostream>
 
 using namespace std;
 
@@ -23,7 +22,8 @@ void ParkingLot::addVehicle(Vehicle *v) {
 
 void ParkingLot::printVehicles() const {
     for (int i = 0; i < vehicles.size(); i++) {
-        vehicles[i].print();
+        vehicles[i] -> horn();
+        vehicles[i] -> print();
     }
 }
 

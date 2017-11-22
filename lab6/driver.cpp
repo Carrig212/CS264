@@ -12,31 +12,27 @@ using std::vector;
 #include "vehicle.h"
 #include "taxi.h"
 #include "truck.h"
+#include "parkinglot.h"
 
 int main() {
-    Taxi *cab = new Taxi(3.3);
-    Truck *mack = new Truck(7.54);
+    ParkingLot *parkingLot = new ParkingLot;
 
-    mack -> setCargo(true);
+    for (int i = 0; i < 10; i++) {
+        if (i % 2 == 0) {
+            Taxi *cab = new Taxi(i);
+            parkingLot -> addVehicle(cab);
+            (i % 4 == 0) ? cab -> setCustomers(true) : cab -> setCustomers(false); // This just sets some of them to have customers
+        }
 
-    std::vector<Vehicle*> parkingLot(2);
-
-    parkingLot[0] = cab;
-    parkingLot[1] = mack;
-
-    cout << "\nThe vehicles cannot get out of their parking spaces because of "
-         << "traffic,\nso they respond: \n";
-
-    for (int i = 0; i < parkingLot.size(); i++) {
-        parkingLot[i] -> horn();
-        cout << endl;
-
-        parkingLot[i] -> print();
-        cout << endl;
+        else {
+            Truck *mack = new Truck(i);
+            parkingLot -> addVehicle(mack);
+            (i % 3 == 0) ? mack -> setCargo(true) : mack -> setCargo(false); // This just sets some of them to have cargo
+        }
     }
 
-    delete cab;
-    delete mack;
+    parkingLot -> printVehicles();
+    cout << "There are " << parkingLot -> getVehicleCount() << " vehicles in this parking Lot." << endl;
 
     return 0;
 }
