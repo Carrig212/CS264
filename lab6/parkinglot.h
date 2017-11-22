@@ -15,5 +15,5 @@ class ParkingLot {
 
 	private:
 		std::vector< Vehicle * > vehicles;
-		int cout;
+		int count;
 };
